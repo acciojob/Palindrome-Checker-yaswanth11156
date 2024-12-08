@@ -1,11 +1,12 @@
 // complete the given function
 
 function palindrome(str){
+	const ele = document.getElementById('boolval')
      if(str == str.split().reverse().join('')){
-		 return true
+		 return ele.innerText.append("true")
 	 }
 	else {
-		return false
+	 return ele.innerText.append("false")
 	}
 }
 module.exports = palindrome
